@@ -6,6 +6,7 @@ export default async function WeatherComponent({ lat, lon }) {
   const { main, description } = await getWeatherData(lat, lon);
   return (
     <Card>
+      <h6 className="feature-name">Current Weather</h6>
       <div className="feature-main">
         <Image
           className="max-w-20"
